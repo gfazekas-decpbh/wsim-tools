@@ -1,0 +1,19 @@
+wsim-tools is released under two Creative Commons licences.
+
+1. Data and models: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+   https://creativecommons.org/licenses/by-nc-sa/4.0/
+   Applies to: artist_embeddings_v0.3.parquet, artist_embeddings_v0.3_sample.csv, artist_tag_prompts_v0.3.2.parquet,
+   encoder/encoder.pt, encoder/vocab.json, encoder/concept_graph_edges.npy, text-model/projection.pt,
+   text-model/concept_embeddings_minilm.npy, text-model/config.json.
+   These are derived from the WASABI Song Corpus (https://doi.org/10.5281/zenodo.5603369), which is licensed
+   under CC BY-NC-SA 4.0; this licence follows from its ShareAlike terms.
+
+2. Code: Creative Commons Attribution 4.0 International (CC BY 4.0)
+   https://creativecommons.org/licenses/by/4.0/
+   Applies to: wsim_text.py, text2artist.py, artist2prompt.py, embed_artist.py, encoder/e3_model.py.
+
+Attribution: George Fazekas, Centre for Digital Music, Queen Mary University of London.
+Copyright (c) 2026 George Fazekas.
+
+The MiniLM sentence model (sentence-transformers/all-MiniLM-L6-v2), downloaded on first use, is not part of this
+repository and keeps its own licence.

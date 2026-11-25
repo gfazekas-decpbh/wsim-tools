@@ -1,0 +1,26 @@
+{
+ "version": "v0.3.1-text",
+ "sentence_model": "sentence-transformers/all-MiniLM-L6-v2",
+ "stageA": {
+  "topk": 8,
+  "tau": 0.65,
+  "sentence": true,
+  "types": "123",
+  "pop": 0.25
+ },
+ "stageB": {
+  "data": "both",
+  "head": "mlp",
+  "tau": 0.05,
+  "epoch": 6
+ },
+ "fusion": {
+  "beta": 2,
+  "pop": 0.5
+ },
+ "prompt": {
+  "n_tags": 12,
+  "distinct": 0.0,
+  "filter": "descriptive tags only: dictionary or genre lexicon, at most 3 words, no artist or user names, and MiniLM cosine >= 0.5 to a genre name or musical descriptor"
+ }
+}

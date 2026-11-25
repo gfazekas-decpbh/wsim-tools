@@ -1,0 +1,7 @@
+torch>=2.0
+numpy<2
+pandas
+scipy
+pyarrow
+sentence-transformers>=3,<4
+transformers<4.47
